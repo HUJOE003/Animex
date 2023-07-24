@@ -9,14 +9,18 @@
 </head> 
 <style>
   .luffy{
-    height:75px;
-    width:75px;
+    height:50px;
+    width:50px;
     margin:2px;
     padding:2px;
     border-radius: 50%;
   }
-  .navbarstyle{
+  #navbarstyle{
     background-color: transparent !important;
+  }
+  .list li a{
+    text-decoration: none;
+    color: azure;
   }
   body{
     background-color: black;
@@ -27,7 +31,8 @@
     font-size: 30px;
 
   }
-  .navbarstyle{
+#navbarstyle{
+  height:65px;
 
 background-color: rgba(0, 0, 0, 0.41) !important;
 }
@@ -45,32 +50,35 @@ background-color: rgba(0, 0, 0, 0.41) !important;
   margin:5px;
   color:black;
 }
-.main-index-img{
-
+#main-index-img{
+  margin-top: -12px;
   background-position: center;
   background-attachment: fixed;
-  height: 250px;
-  width:150px;
+  height:100vh;
+  width:100vw;
 }
 .content1{
   
   font-size: 50px;
+}
+.div1{
+    margin-left: auto !important;
 }
 
 
 </style>
 <body>  
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-dark-body-transparent rounded fixed-top" id="navbarstyle">
+  <nav class="navbar navbar-expand-lg rounded fixed-top" id="navbarstyle">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Animex <img class="luffy" src="lufy.jpg"></a>
       
-      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse bg-dark m-1 rounded" id="navbarText" >
-        <ul class="navbar-nav  mb-1 mb-lg-0 bg-dark rounded" >
+      <div class="collapse navbar-collapse  m-1 rounded   " id="navbarText" >
+        <ul class="navbar-nav  mb-1 mb-lg-0  rounded  div1" >
           <li class="nav-item">
             <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
           </li>
@@ -84,12 +92,12 @@ background-color: rgba(0, 0, 0, 0.41) !important;
             <a class="nav-link text-white" href="#">Contact Us</a>
           </li>
         </ul>
-        <form class="d-flex  " role="search">
+        <form class="d-flex " role="search">
           <input class="form-control me-4 " type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
         <span class="navbar-text">
-          <form class="d-flex " role="search">
+          <form class=" " role="search">
             <button class="btn btn-outline-light m-4" type="submit">Login</button></form>
         </span>
       </div>
@@ -165,19 +173,28 @@ background-color: rgba(0, 0, 0, 0.41) !important;
       <br><br>
 
     <!-- FOOTER -->
-    <div class="Shortcuts mr-2 d-flex">
+    <div class="Shortcuts  d-flex justify-content-between ">
       <div class="shortcuts">
       <h5>Shortcut Links</h5>
-      <ul>
-         <li><a href="#">Home</a></li>
-         <li><a href="#products">Products</a></li>
-         <li><a href="#contact">contact</a></li>
-      </ul>
-      <div class="mapouter m-1 d-flex"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=793&amp;height=400&amp;hl=en&amp;q=madurai&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
-    </div>
-    </div>
+      </div>
+      <div>
+        <ul type="none"  class="list">
+          <li><a href="#" >Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">contact</a></li>
+       </ul>
+      </div>
     
-  <!-- FOOTER -->
+     <div>
+      <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+        marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=793&amp;height=400&amp;hl=en&amp;q=madurai&amp;t=h&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://connectionsgame.org/">Connections NYT</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+         </div>
+     </div>
+        
+  
+    
+  <!-- FOOTER --  > 
   </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </html>
